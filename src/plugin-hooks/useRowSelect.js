@@ -129,9 +129,7 @@ function reducer(state, action, previousState, instance) {
     if (isSelected === shouldExist) {
       return state
     }
-
-    let newSelectedRowIds = { ...state.selectedRowIds }
-
+    
     const handleRowById = id => {
       const row = rowsById[id]
 
